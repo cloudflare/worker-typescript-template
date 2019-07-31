@@ -1,5 +1,6 @@
-# ʕ •́؈•̀) `cf-worker-typescript-template`
+# ʕ •́؈•̀) `worker-typescript-template`
 
+// Please change name to worker-typescript-template
 A batteries included template for kick starting a TypeScript Cloudflare worker project.
 
 ## Getting Started
@@ -22,7 +23,7 @@ This template comes with mocha tests which simply test that the request handler 
 
 ### Formatting
 
-This template uses [`tslint`](https://github.com/palantir/tslint) to format the project. To invoke, run `npm run fmt`.
+This template uses [`tslint`](https://github.com/palantir/tslint) to format the project. To invoke, run `npm run format`.
 
 ### Previewing and Publishing
 
