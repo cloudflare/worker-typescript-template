@@ -8,6 +8,7 @@ on:
 
 jobs:
   deploy_dev:
+    if: ${{ github.ref != 'refs/heads/master' }}
     environment: 'dev'
     runs-on: ubuntu-latest
     name: Deploy to Dev
@@ -20,7 +21,7 @@ jobs:
           environment: 'dev'
 
   deploy_production:
-    needs: deploy_dev
+    if: ${{ github.ref == 'refs/heads/master' }}
     environment: 'production'
     runs-on: ubuntu-latest
     name: Deploy to Production
