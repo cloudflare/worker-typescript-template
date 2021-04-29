@@ -4,14 +4,15 @@ on:
   push:
     branches:
       - master
+  pull_request:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy
+    name: Deploy CF Worker
     steps:
       - uses: actions/checkout@v2
-      - name: Publish
+      - name: Publish to Cloudflare
         uses: cloudflare/wrangler-action@1.3.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
