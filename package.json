@@ -4,6 +4,7 @@
   "description": "Cloudflare worker TypeScript template",
   "main": "index.js",
   "scripts": {
+    "start": "wrangler dev --port 7070",
     "build": "webpack",
     "dev": "NODE_ENV=development npm run build",
     "format": "prettier --write '**/*.{ts,js,css,json,md}'",

@@ -1,0 +1,34 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  deploy_dev:
+    if: ${{ github.ref != 'refs/heads/master' }}
+    environment: 'dev'
+    runs-on: ubuntu-latest
+    name: Deploy to Dev
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish to Cloudflare
+        uses: cloudflare/wrangler-action@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          environment: 'dev'
+
+  deploy_production:
+    if: ${{ github.ref == 'refs/heads/master' }}
+    environment: 'production'
+    runs-on: ubuntu-latest
+    name: Deploy to Production
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish to Cloudflare
+        uses: cloudflare/wrangler-action@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          environment: 'production'
