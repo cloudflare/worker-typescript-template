@@ -1,6 +1,6 @@
 type = "webpack"
-zone_id = "7fcc8ec79b6730e5662f0a26f7192914"
-account_id = "3f1097e7b7e1b9e35dd462c0c3fad82b"
+zone_id = ""
+account_id = ""
 workers_dev = true
 webpack_config = "webpack.config.js"
 name = "cfworker-poc-local"
@@ -9,11 +9,9 @@ vars = { ENVIRONMENT = "local" }
 [env.dev]
 route = "dev-api.vivek-rajagopal.net/*"
 name = "cfworker-poc-dev"
-workers_dev = true
 vars = { ENVIRONMENT = "dev" }
 
 [env.production]
 route = "api.vivek-rajagopal.net/*"
 name = "cfworker-poc"
-workers_dev = true
 vars = { ENVIRONMENT = "production" }

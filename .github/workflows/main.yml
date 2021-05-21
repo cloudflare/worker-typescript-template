@@ -6,6 +6,10 @@ on:
       - master
   pull_request:
 
+env:
+  CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+  CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+
 jobs:
   deploy_dev:
     if: ${{ github.ref != 'refs/heads/master' }}
