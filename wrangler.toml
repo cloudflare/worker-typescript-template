@@ -7,11 +7,9 @@ name = "cfworker-poc-local"
 vars = { ENVIRONMENT = "local" }
 
 [env.dev]
-route = "dev-api.vivek-rajagopal.net/*"
 name = "cfworker-poc-dev"
 vars = { ENVIRONMENT = "dev" }
 
 [env.production]
-route = "api.vivek-rajagopal.net/*"
 name = "cfworker-poc"
 vars = { ENVIRONMENT = "production" }
