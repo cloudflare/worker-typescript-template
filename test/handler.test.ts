@@ -1,11 +1,9 @@
 import { handleRequest } from '../src/handler'
-import makeServiceWorkerEnv from 'service-worker-mock'
-
-declare var global: any
+import {makeEdgeEnv} from 'edge-mock'
 
 describe('handle', () => {
   beforeEach(() => {
-    Object.assign(global, makeServiceWorkerEnv())
+    makeEdgeEnv()
     jest.resetModules()
   })
 
