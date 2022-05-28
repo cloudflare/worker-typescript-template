@@ -6,6 +6,6 @@ route = ""
 workers_dev = true
 
 [build]
-command = "npm install && npm run build"
+command = "npm ci && npm run build"
 [build.upload]
 format = "service-worker"
