@@ -11,7 +11,7 @@ This template is meant to be used with [Wrangler](https://github.com/cloudflare/
 To generate using Wrangler, run this command:
 
 ```bash
-wrangler generate my-ts-project https://github.com/cloudflare/worker-typescript-template
+npm init cloudflare my-app https://github.com/cloudflare/worker-typescript-template
 ```
 
 ### 👩 💻 Developing
