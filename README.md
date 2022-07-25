@@ -1,5 +1,11 @@
 # ʕ •́؈•̀) `worker-typescript-template`
 
+## ⚠️ Warning: This template is no longer maintained
+
+Create TypeScript workers [directly from command-line](https://developers.cloudflare.com/workers/get-started/guide/) using `wrangler init` instead.
+
+---
+
 A batteries included template for kick starting a TypeScript Cloudflare worker project.
 
 ## Note: You must use [wrangler](https://developers.cloudflare.com/workers/cli-wrangler/install-update) 1.17 or newer to use this template.
