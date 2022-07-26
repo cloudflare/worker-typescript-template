@@ -1,11 +1,3 @@
+main = "./src/index.ts"
 name = "worker-typescript-template"
-type = "javascript"
-zone_id = ""
-account_id = ""
-route = ""
-workers_dev = true
-
-[build]
-command = "npm install && npm run build"
-[build.upload]
-format = "service-worker"
+compatibility_date = "2022-07-26"
