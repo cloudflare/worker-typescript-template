@@ -2,7 +2,7 @@
 
 ## ⚠️ Warning: This template is no longer maintained
 
-Create TypeScript workers [directly from command-line](https://developers.cloudflare.com/workers/get-started/guide/) using `wrangler init` instead.
+Create TypeScript workers in the [command-line with Wrangler 2.0.0+](https://developers.cloudflare.com/workers/wrangler/get-started/) using `wrangler init` instead.
 
 ---
 
