@@ -12,7 +12,7 @@ A batteries included template for kick starting a TypeScript Cloudflare worker p
 
 ## 🔋 Getting Started
 
-This template is meant to be used with [Wrangler](https://github.com/cloudflare/wrangler). If you are not already familiar with the tool, we recommend that you install the tool and configure it to work with your [Cloudflare account](https://dash.cloudflare.com). Documentation can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler/).
+This template is meant to be used with [Wrangler](https://github.com/cloudflare/wrangler). If you are not already familiar with the tool, we recommend that you install the tool and configure it to work with your [Cloudflare account](https://dash.cloudflare.com). Documentation can be found [here](https://developers.cloudflare.com/workers/cli-wrangler/).
 
 To generate using Wrangler, run this command:
 
@@ -34,7 +34,7 @@ This template uses [`prettier`](https://prettier.io/) to format the project. To 
 
 ### 👀 Previewing and Publishing
 
-For information on how to preview and publish your worker, please see the [Wrangler docs](https://developers.cloudflare.com/workers/tooling/wrangler/commands/#publish).
+For information on how to preview and publish your worker, please see the [Wrangler docs](https://developers.cloudflare.com/workers/cli-wrangler/commands/#publish).
 
 ## 🤢 Issues
 
@@ -42,4 +42,4 @@ If you run into issues with this specific project, please feel free to file an i
 
 ## ⚠️ Caveats
 
-The `service-worker-mock` used by the tests is not a perfect representation of the Cloudflare Workers runtime. It is a general approximation. We recommend that you test end to end with `wrangler dev` in addition to a [staging environment](https://developers.cloudflare.com/workers/tooling/wrangler/configuration/environments/) to test things before deploying.
+The `service-worker-mock` used by the tests is not a perfect representation of the Cloudflare Workers runtime. It is a general approximation. We recommend that you test end to end with `wrangler dev` in addition to a [staging environment](https://developers.cloudflare.com/workers/cli-wrangler/configuration/#environments) to test things before deploying.
