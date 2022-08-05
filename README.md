@@ -26,7 +26,7 @@ wrangler generate my-ts-project https://github.com/cloudflare/worker-typescript-
 
 ### 🧪 Testing
 
-This template comes with jest tests which simply test that the request handler can handle each request method. `npm test` will run your tests.
+This template comes with jest tests utilizing [Miniflare](https://github.com/cloudflare/miniflare) which simply test that the request handler can handle each request method. `npm test` will run your tests.
 
 ### ✏️ Formatting
 
@@ -39,7 +39,3 @@ For information on how to preview and publish your worker, please see the [Wrang
 ## 🤢 Issues
 
 If you run into issues with this specific project, please feel free to file an issue [here](https://github.com/cloudflare/worker-typescript-template/issues). If the problem is with Wrangler, please file an issue [here](https://github.com/cloudflare/wrangler/issues).
-
-## ⚠️ Caveats
-
-The `service-worker-mock` used by the tests is not a perfect representation of the Cloudflare Workers runtime. It is a general approximation. We recommend that you test end to end with `wrangler dev` in addition to a [staging environment](https://developers.cloudflare.com/workers/tooling/wrangler/configuration/environments/) to test things before deploying.
