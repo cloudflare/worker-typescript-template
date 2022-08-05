@@ -1,4 +1,3 @@
-import { someHandler } from "./some-handler";
 /**
  * Welcome to Cloudflare Workers! This is your first worker.
  *
@@ -23,13 +22,12 @@ export interface Env {
 	// MY_BUCKET: R2Bucket
 }
 
-export default {
+export const worker = {
 	async fetch(
 		request: Request,
 		env: Env,
 		ctx: ExecutionContext
 	): Promise<Response> {
-		const value = someHandler(request);
-		return new Response(`Hello World from ${value}!`);
+		return new Response(`Hello World from ${request.method}!`);
 	},
 };
