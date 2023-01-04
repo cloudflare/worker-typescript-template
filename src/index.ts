@@ -22,7 +22,7 @@ export interface Env {
 	// MY_BUCKET: R2Bucket
 }
 
-export const worker = {
+export default {
 	async fetch(
 		request: Request,
 		env: Env,
