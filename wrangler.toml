@@ -1,7 +1,0 @@
-name = "game-save-worker"
-main = "src/index.js"
-compatibility_date = "2024-01-01"
-
-[[kv_namespaces]]
-binding = "GAME_SAVES"
-id = "fc8b224205764d0abc77411e70c87b97"
