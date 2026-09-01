@@ -1,3 +1,0 @@
-main = "./src/index.ts"
-name = "worker-typescript-template"
-compatibility_date = "2022-07-26"
